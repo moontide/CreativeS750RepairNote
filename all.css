@@ -1,0 +1,146 @@
+a:link
+{
+	/*color: rgb(255,204,0);*/
+	color: #339;
+}
+a:visited
+{
+	/*color: rgb(153,204,204);*/
+	color: #36c;
+}
+a:hover
+{
+	color: #3f6;
+}
+a:active
+{
+	/*color: rgb(102,255,0);*/
+}
+body
+{
+	/*margin-left: 2px;*/
+	font-family: Verdana, Arial, Helvetica, '文泉驿点阵正黑', '文泉驿正黑', '思源黑体 CN', '思源宋体 CN', '宋体'; /* 让无衬线字体在前面 */
+	font-weight: 400;
+	/*
+	background-color: rgb(51,102,204);
+	color: rgb(255,255,153);
+	background-color: #3366cc;
+	background-color: #39f;
+	*/
+	color: #036;
+}
+table.plain
+{
+	border-top: 1px solid;
+	border-left: 1px solid;
+	/*
+	table-border-color-light: rgb(153,255,204);
+	table-border-color-dark: rgb(0,0,51);
+	*/
+}
+table.plain tr
+{
+	border: 1px solid;
+}
+table.plain tr th, table.plain tr td
+{
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Verdana, Arial, Helvetica, '文泉驿点阵正黑', '文泉驿正黑', '宋体'; /* 让无衬线字体在前面 */
+}
+h1
+{
+	/*color: rgb(255,204,0);*/
+	color: darkblue;
+}
+h2
+{
+	color: rgb(153,255,51);
+}
+h3
+{
+	color: rgb(0,255,204);
+}
+h4
+{
+	color: rgb(255,204,0);
+}
+h5
+{
+	color: rgb(153,255,51);
+}
+h6
+{
+	color: rgb(0,255,204);
+}
+
+/* -------------------------------------------------------------------------- */
+#content {
+	/*height: 320px;*/
+}
+#footer {
+	text-align: center;
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px dashed;
+}
+.note {
+	color: green;
+	background-color: #9f9;
+	border-style: double;
+	padding: 4px;
+}
+.warning {
+}
+.error {
+}
+.discontinued
+{
+}
+
+/* -------------------------------------------------------------------------- */
+/* 语言工具条 */
+/* -------------------------------------------------------------------------- */
+/*
+利用大图片分割成小图，并设置为背景
+参考 http://dev.opera.com/articles/view/31-css-background-images/#sprites
+ */
+.lang-bar {
+	float: right;
+}
+#lang-list {
+	list-style-type: none;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#lang-list .lang .flag {
+	width: 16px;
+	height: 11px;
+	background-color: red;
+	background-position: left top;
+	background-repeat: no-repeat;
+	/*
+	background-size: 24px 24px;
+	background-origin: content-box;
+	background-clip: border-box;
+	*/
+	background-attachment: scroll;
+	background-image: url('images/lang-logos.png');
+	display: inline-block;
+}
+#lang-list #lang-zh .flag {
+	background-position: 0px 0px;
+}
+#lang-list #lang-zh-hk .flag {
+	background-position: -48px 0px;
+}
+#lang-list #lang-zh-tw .flag {
+	background-position: -32px 0px;
+}
+#lang-list #lang-en .flag {
+	background-position: -16px 0px;
+}
