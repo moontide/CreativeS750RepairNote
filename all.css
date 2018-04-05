@@ -38,6 +38,11 @@ table.plain
 	table-border-color-dark: rgb(0,0,51);
 	*/
 }
+table.plain > thead th
+{
+	background-color: Navy;
+	color: LightGray;
+}
 table.plain tr
 {
 	border: 1px solid;
@@ -58,11 +63,13 @@ h1
 }
 h2
 {
-	color: rgb(153,255,51);
+	/*color: rgb(153,255,51);*/
+	color: darkcyan;
 }
 h3
 {
-	color: rgb(0,255,204);
+	/*color: rgb(0,255,204);*/
+	color: grey;
 }
 h4
 {
@@ -76,7 +83,11 @@ h6
 {
 	color: rgb(0,255,204);
 }
-
+[title]
+{
+	background-color: GreenYellow;
+	cursor: help;
+}
 /* -------------------------------------------------------------------------- */
 #content {
 	/*height: 320px;*/
@@ -89,8 +100,9 @@ h6
 }
 .note {
 	color: green;
-	background-color: #9f9;
-	border-style: double;
+	/*background-color: #9f9;*/
+	background-color: LightYellow;
+	border-style: dotted;
 	padding: 4px;
 }
 .warning {
