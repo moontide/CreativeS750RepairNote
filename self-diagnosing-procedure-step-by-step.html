@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>创新 S750 自我维修诊断流程 | Creative S750 Repair By Yourself Diagnose Procedure</title>
+	<link type='text/css' rel='stylesheet' href='all.css'/>
+	<script type='text/javascript' src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='lang.js' charset='utf-8'></script>
+	<script type='text/javascript' src='simple-questionnaire.js' charset='utf-8'></script>
+	<script type='text/javascript' src='diagnose-questionnaire.js' charset='utf-8'></script>
+</head>
+
+<body>
+<!-- 语言切换条 -->
+<div class='lang-bar'>
+	<ul id='lang-list'>
+	<li class='lang' id='lang-zh' onclick="SetLang('zh');" style='cursor:pointer;'><span class='flag'></span> 中<span lang='en'>zh</span></li>
+<!--
+	<li class='lang' id='lang-zh-hk' onclick="SetLang('zh-hk');" style='cursor:pointer;'><span class='flag'></span> hk<span lang='zh-hk'>港</span></li>
+	<li class='lang' id='lang-zh-tw' onclick="SetLang('zh-tw');" style='cursor:pointer;'><span class='flag'></span> tw<span lang='zh-tw'>台</span></li>
+-->
+	<li class='lang' id='lang-en' onclick="SetLang('en');" style='cursor:pointer;'><span class='flag'></span> en<span lang='zh'>英</span></li>
+	</ul>
+</div>
+
+<h1>根据现象定位故障点 -- 问卷式诊断流程</h1>
+<p>
+	<span lang='zh'>此诊断流程是根据我维修时遇到的问题整理而成，所以，它并不涵盖【所有】问题 -- 也就不能帮助你解决【所有】问题。</span>
+	<span lang='en'>This self diagnosing procedure is composed by issues I have encountered, which means it does not cover ALL issues, so you can't use it to diagnose ALL issues.</span>
+</p>
+<div id='questionnaire-container'>
+</div>
+
+<button id='button-goto-previous-question'><span lang='zh'>上一步</span><span lang='en'>Previous</span></button>
+<button id='button-goto-next-question'><span lang='zh'>下一步</span><span lang='en'>Next</span></button>
+
+
+<script type='text/javascript'>
+try
+{
+	GenerateQuestionnaire (__questionnaire, $('#questionnaire-container'));
+	StartQuestionnaire (__questionnaire);
+	$('#button-goto-previous-question').click (function(){GotoPreviousQuestion(__questionnaire)});
+	$('#button-goto-next-question').click (function(){GotoNextQuestion(__questionnaire)});
+
+
+	RetrieveLangSet (document.body, langset);
+	SetLang_Unsafe ('zh-cn', 'en');
+}
+catch (e)
+{
+}
+</script>
+</body>
+</html>

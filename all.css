@@ -156,3 +156,24 @@ h6
 #lang-list #lang-en .flag {
 	background-position: -16px 0px;
 }
+
+/* -------------------------------------------------------------------------- */
+/* 简易问卷 */
+/* -------------------------------------------------------------------------- */
+.question-number:before
+{
+	content: 'Q';
+}
+.question-number:after
+{
+	content: ': ';
+}
+.question-text
+{
+	margin-left: 1em;
+}
+[id^="__Q"]
+{
+	border: 1px dashed;
+	margin-bottom: 1em;
+}
