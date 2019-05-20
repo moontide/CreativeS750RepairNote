@@ -23,7 +23,4 @@ https://forum.lowyat.net/topic/2873671/all
 
 电容编号为C61 450V 68uf 替换成 450V 100uf 的电容即可解决
 * 电源板原理图在PSU目录
-
-![Image text](../../images/IMG_20190514_092152.jpg)
-
-
+* C61电容实物图在images/IMG_20190514_092152.jpg
