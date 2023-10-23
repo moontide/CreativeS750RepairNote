@@ -4,4 +4,4 @@
 
 This is my personal note for repairing Creative S750/S700 Subwoofer (MF7010), including power supply unit (PSU) board repair and power amplifier (AMP) board repair. For detail information, please visit:
 
-[Creative S750/S700 Subwoofer (MF7010) Repair Note](https://moontide.github.com/CreativeS750RepairNote)
+[Creative S750/S700 Subwoofer (MF7010) Repair Note](https://moontide.github.io/CreativeS750RepairNote)

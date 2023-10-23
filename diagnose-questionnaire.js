@@ -18,6 +18,11 @@ var __questionnaire =
 					next: 2,
 				},
 				{
+					v: 'burst-distortion',
+					l: '<span lang="zh">输入音量调高后，某个或某些声道出现破音失真。同时，调节音箱音量时，在该声道的喇叭中可能会发出每次步进的声音，且步进的声音随着音量升降而对应升降。</span><span lang="en">Burst distortion occurs after adjust the input volume to high level. And, when adjusting the speaker volume, there will comes sounds in each step</span>',
+					next: 7,
+				},
+				{
 					v: 'else',
 					l: '<span lang="zh">其他情况</span><span lang="en">Something else</span>',
 					next: 8,
@@ -59,6 +64,42 @@ var __questionnaire =
 					l: 'bbbbbbbbbb',
 					next: 6,
 				},
+			]
+		},
+		{
+			q: '',
+			options:
+			[
+			]
+		},
+		{
+			q: '',
+			options:
+			[
+			]
+		},
+		{
+			q: '',
+			options:
+			[
+			]
+		},
+		{
+			q: '',
+			options:
+			[
+			]
+		},
+		{
+			q: '是不是清理过音频处理板上的变质胶，但没清理干净？不用我说，你现在也知道该怎么做了…',
+			options:
+			[
+			]
+		},
+		{
+			q: '',
+			options:
+			[
 			]
 		},
 	]

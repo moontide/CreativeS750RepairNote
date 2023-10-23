@@ -35,6 +35,28 @@
 <button id='button-goto-next-question'><span lang='zh'>下一步</span><span lang='en'>Next</span></button>
 
 
+<h1>从故障推断可能出现的现象</h1>
+<table class='plain' cellspacing='0' cellpadding='2'>
+	<thead>
+	<tr>
+		<th>板子</th>
+		<th>元器件</th>
+		<th>故障</th>
+		<th>可能出现的现象</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	<tr>
+		<td>电源板</td>
+		<td>Q1 Q2 Q3 Q4</td>
+		<td>IRF740 针脚虚焊</td>
+		<td>S 脚虚焊，会导致电容电压为原来的两倍（原因未知，业余的悲哀），导致烧毁 IRF740，进而出现“雪花音”、“无声音”现象</td>
+	</tr>
+	</tbody>
+</table>
+
+
 <script type='text/javascript'>
 try
 {
